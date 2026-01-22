@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Pratham Khairmode</title>
+    <meta name="description" content="Professional portfolio of Pratham Khairmode - Cybersecurity Enthusiast">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons (using CDN for simplicity) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo"><i class="fas fa-shield-alt"></i> Pratham Khairmode</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#competitions">Competitions</a> <!-- added -->
+                <a href="#certifications">Certifications</a> <!-- added -->
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Mobile Menu -->
+    <div class="mobile-nav">
+        <button class="close-menu">&times;</button>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#competitions" class="mobile-link">Competitions</a> <!-- added -->
+        <a href="#certifications" class="mobile-link">Certifications</a> <!-- added -->
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <!-- inserted canvas for binary background -->
+            <canvas id="binary-canvas" aria-hidden="true"></canvas>
+
+            <div class="container hero-content">
+                <h1 class="hero-title">I Secure System,<span class="highlight"> Not Just Code</span></h1>
+                <p class="hero-subtitle">Aspiring Cybersecurity Analyst & Junior Java Developer.  Actively Mastering Kali Linux, VAPT, Nmap and Metasploitable
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <!-- holographic overlay for futuristic look -->
+            <div class="hero-holo" aria-hidden="true"></div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <div class="container about-content">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-bar"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                           I’m Pratham, a Computer Science & Engineering undergraduate with a strong focus on cybersecurity, programming, and automation-driven systems. I work at the intersection of software development, system security, and robotics, building solutions that are both functional and secure.
+                        </p>
+                        <p>
+                          My technical foundation includes Java, Python, and Linux, along with hands-on experience in Vulnerability Assessment and Penetration Testing (VAPT) using Kali Linux and industry-standard security tools. I actively explore how systems fail, how vulnerabilities arise, and how secure architectures can be designed to prevent them.
+                        </p>
+                        <p>Beyond security, I have practical exposure to robotics and automation, where I work with microcontrollers, sensors, and software integration to create intelligent, autonomous systems. This background helps me think in terms of end-to-end systems—from hardware interaction to backend logic and secure deployment.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">6+</span>
+                                <span class="stat-label">Months Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="assets/profile.jpeg" alt="Profile Photo" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="title-bar"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming and Development</h3>
+                        <ul class="skill-list">
+                            <li><span>HTML5 & CSS3</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>Python</span></li>
+                            <li><span>Java</span></li>
+                            <li><span>C++</span></li>
+                            <li><span>SQL</span></li>
+                        </ul>
+                    </div>
+                    <!-- Category 2 -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i> CyberSecurity</h3>
+                        <ul class="skill-list">
+                            <li><span>Vulnerability Assessment & Penetration Testing (VAPT)</span></li>
+                            <li><span>Kali Linux</span></li>
+                            <li><span>Nmap</span></li>
+                            <li><span>Wireshark</span></li>
+                            <li><span>Burp Suite</span></li>
+                            <li><span>Basic Exploitation and Traffic Analysis</span></li>
+                        </ul>
+                    </div>
+                    <!-- Category 3 -->
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Tools</h3>
+                        <ul class="skill-list">
+                            <li><span>Git & GitHub</span></li>
+                            <li><span>VS Code</span></li>
+                            <li><span>Figma</span></li>
+                            <li><span>Notion</span></li>
+                            <li><span>Robotics Fundamemtals</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-bar"></div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card">
+                        <img src="assets/internetmap.png" alt="Internet Weather Map" class="project-img">
+                        <div class="project-content">
+                            <h3>Internet Weather Map</h3>
+                            <p>An Internet Weather Map visualizes real-time global cyber activity such as attacks, scans, and malicious traffic showing the constantly changing ‘security climate’ of the internet</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/prathamkhairmode15/internet-weather-map" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project Card 2 -->
+                    <article class="project-card">
+                        <img src="assets/krishibodh.png" alt="Krishibodh Control Interface" class="project-img">
+                        <div class="project-content">
+                            <h3>Krishibodh Control Interface</h3>
+                            <p>Krishibodh Control Interface is a centralized dashboard for monitoring, connecting, and controlling the robotic system in real time with live status feedback.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Project Card 3 -->
+                    <article class="project-card">
+                        <img src="assets/portscan.png" alt="Cyber Port Scanner" class="project-img">
+                        <div class="project-content">
+                            <h3>Cyber Port Scanner</h3>
+                            <p>Cyber Port Scanner is a security tool that identifies open, closed, and vulnerable network ports to assess system exposure in real time.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Python</span>
+                                <span>Nmap</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/prathamkhairmode15/Cyber_Port_Scanner" target="_blank"><i class="fab fa-github"></i> Code</a>
+                                <a href="https://cyber-astra.onrender.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                     <!-- Project Card 4 -->
+                    <article class="project-card">
+                        <img src="assets/smartdict.png" alt="Smart Dictionary" class="project-img">
+                        <div class="project-content">
+                            <h3>Smart Dictionary</h3>
+                            <p>Smart Dictionary is an intelligent search tool that quickly finds and retrieves word meanings using optimized string-matching techniques.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/prathamkhairmode15/Smart-Dictionary" target="_blank"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+                     <!-- Project Card 5 -->
+                    <article class="project-card">
+                        <img src="assets/krishibodh copy.png" alt="KRISHIBODH" class="project-img">
+                        <div class="project-content">
+                            <h3>KRISHIBODH</h3>
+                            <p>KRISHIBODH is an intelligent robotics and automation system designed to monitor, control, and optimize smart farming and lab environments.</p>
+                            <div class="project-tech">
+                                <span>Arduino UNO</span>
+                                <span>C++</span>
+                                <span>HARDWARE</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="center-btn">
+                    <a href="https://github.com/prathamkhairmode15?tab=repositories" target="_blank" class="btn btn-outline">View More on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="title-bar"></div>
+                </div>
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">January 2025 - Present</span>
+                            <h3 class="timeline-role">Cybersecurity & Ethical Hacker Intern</h3>
+                            <h4 class="timeline-company">NVERON</h4>
+                            <p>Started a project-based internship focused on Cyber Security & Ethical Hacking.
+                                Focus Areas: Network Security, Vulnerability Assessment, and Penetration Testing.
+                                Participating in structured technical projects approved by AICTE and APSCHE.
+                                Gaining hands-on experience in identifying and mitigating security threats in a professional environment.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">December 2025 - January 2025</span>
+                            <h3 class="timeline-role">CyberSecurity Intern</h3>
+                            <h4 class="timeline-company">Hack Secure</h4>
+                            <p>During my Hack Secure cybersecurity internship, I gained hands-on experience in vulnerability assessment, network scanning, and using industry-standard security tools on provided web application. The internship strengthened my understanding of system security, ethical hacking workflows, and responsible disclosure practices.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">September 2025 - October 2025</span>
+                            <h3 class="timeline-role">Cyber Security & Ethical Hacker Intern</h3>
+                            <h4 class="timeline-company">ApexPlanet Software Pvt Ltd</h4>
+                            <p>This experience provided invaluable hands-on learning in areas such as web application security, network penetration testing, social engineering, and system hardening. I'm grateful for the challenges and insights gained, which have significantly sharpened my skills in threat analysis and defense.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competitions Section (new) -->
+        <section id="competitions" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Competitions</h2>
+                    <div class="title-bar"></div>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-img" style="height:140px;display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg, rgba(0,245,255,0.03), rgba(139,92,246,0.02));">
+                            <i class="fas fa-trophy" style="font-size:36px;color:var(--neon)"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>CTF Challenge — Top 5</h3>
+                            <p>Placed top 5 in regional Capture The Flag competition focused on web and binary exploitation.</p>
+                            <div class="project-tech">
+                                <span>Reverse</span><span>Web</span><span>Pwn</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-img" style="height:140px;display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg, rgba(255,77,253,0.03), rgba(0,245,255,0.02));">
+                            <i class="fas fa-bolt" style="font-size:36px;color:var(--neon-pink)"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Hackathon — Security Track</h3>
+                            <p>Built an automated vulnerability scanner prototype during a 48-hour security hackathon.</p>
+                            <div class="project-tech">
+                                <span>Automation</span><span>Python</span><span>DevSecOps</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section (new) -->
+        <section id="certifications" class="section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="title-bar"></div>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-img" style="height:140px;display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg, rgba(0,245,255,0.02), rgba(139,92,246,0.01));">
+                            <i class="fas fa-certificate" style="font-size:36px;color:var(--neon)"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>OSCP</h3>
+                            <p>Offensive Security Certified Professional — hands-on penetration testing certification.</p>
+                            <div class="project-tech">
+                                <span>PenTest</span><span>Exploitation</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-img" style="height:140px;display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg, rgba(139,92,246,0.02), rgba(255,77,253,0.01));">
+                            <i class="fas fa-shield-alt" style="font-size:36px;color:var(--neon-pink)"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>CompTIA Security+</h3>
+                            <p>Foundational security certification covering risk management, cryptography and architecture.</p>
+                            <div class="project-tech">
+                                <span>Security</span><span>Risk</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container contact-content">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-bar"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p class="contact-text">
+                            I'm currently looking for new opportunities. Whether you have a question or just want to say
+                            hi,
+                            I'll try my best to get back to you!
+                        </p>
+                        <div class="contact-methods">
+                            <div class="method">
+                                <i class="fas fa-envelope"></i>
+                                <span>prathamkhairmode15@gmail.com</span>
+                            </div>
+                            <div class="method">
+                                <i class="fab fa-linkedin"></i>
+                                <span>linkedin.com/in/pratham-khairmode</span>
+                            </div>
+                            <div class="method">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bengaluru, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! (Demo only)');">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/prathamkhairmode15" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pratham-khairmode" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2026 Pratham Khairmode. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
