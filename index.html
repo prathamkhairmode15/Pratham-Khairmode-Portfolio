@@ -17,39 +17,8 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-content">
-            <a href="#" class="logo"><i class="fas fa-shield-alt"></i> Pratham Khairmode</a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#competitions">Competitions</a> <!-- added -->
-                <a href="#certifications">Certifications</a> <!-- added -->
-                <a href="#contact">Contact</a>
-                <button id="theme-toggle" aria-label="Toggle Dark Mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
-            <div class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Sidebar Mobile Menu -->
-    <div class="mobile-nav">
-        <button class="close-menu">&times;</button>
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#skills" class="mobile-link">Skills</a>
-        <a href="#projects" class="mobile-link">Projects</a>
-        <a href="#experience" class="mobile-link">Experience</a>
-        <a href="#competitions" class="mobile-link">Competitions</a> <!-- added -->
-        <a href="#certifications" class="mobile-link">Certifications</a> <!-- added -->
-        <a href="#contact" class="mobile-link">Contact</a>
-    </div>
+    <!-- NAV removed to avoid mobile conflicts and simplify responsive behavior -->
+    <!-- ...existing code... -->
 
     <main>
         <!-- Hero Section -->
@@ -276,7 +245,7 @@
                             <h3 class="timeline-role">Cybersecurity & Ethical Hacker Intern</h3>
                             <h4 class="timeline-company">NVERON</h4>
                             <p>Started a project-based internship focused on Cyber Security & Ethical Hacking.
-                                Focus Areas: Network Security, Vulnerability Assessment, and Penetration Testing.
+                                Focus Areas: Network Security, Vulnerability Assessment, and Penetration Testing.>
                                 Participating in structured technical projects approved by AICTE and APSCHE.
                                 Gaining hands-on experience in identifying and mitigating security threats in a professional environment.</p>
                         </div>
@@ -314,26 +283,28 @@
                 </div>
                 <div class="projects-grid">
                     <article class="project-card">
-                        <div class="project-img" style="height:140px;display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg, rgba(0,245,255,0.03), rgba(139,92,246,0.02));">
-                            <i class="fas fa-trophy" style="font-size:36px;color:var(--neon)"></i>
+                        <!-- inline styles removed, use CSS classes instead -->
+                        <div class="project-img small gradient--cyan">
+                            <img src="assets/competitions/ambedakr.jpg" alt="CTF Challenge — Top 5" class="project-thumb" onerror="this.style.display='none'">
                         </div>
                         <div class="project-content">
-                            <h3>CTF Challenge — Top 5</h3>
-                            <p>Placed top 5 in regional Capture The Flag competition focused on web and binary exploitation.</p>
+                            <h3>Project Exhibition</h3>
+                            <p>Excited to have participated in the 9th Techno Exhibition organized by Dr.Ambedkar Institute of Technology! Our project Farmbot was showcased under the IoT theme, and it marked our first-ever competition experience a truly memorable and motivating milestone for the team.</p>
                             <div class="project-tech">
-                                <span>Reverse</span><span>Web</span><span>Pwn</span>
+                                <span>Automation</span><span>Robotics</span><span>Top 25</span>
                             </div>
                         </div>
                     </article>
                     <article class="project-card">
-                        <div class="project-img" style="height:140px;display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg, rgba(255,77,253,0.03), rgba(0,245,255,0.02));">
-                            <i class="fas fa-bolt" style="font-size:36px;color:var(--neon-pink)"></i>
+                        <div class="project-img small gradient--pink">
+                            <img src="assets/competitions/Reva.jpg" alt="Hackathon — Security Track" class="project-thumb" onerror="this.style.display='none'">
                         </div>
                         <div class="project-content">
-                            <h3>Hackathon — Security Track</h3>
-                            <p>Built an automated vulnerability scanner prototype during a 48-hour security hackathon.</p>
+                            <h3>Hackathon — Sustainable Irrigation Track</h3>
+                            <p>This wasn’t just a hackathon. For us Pratham Khairmode, Akash Ainapur, Basavaraj. S Sarwad, and Nitesh patil, IOTOPIA 2025 became a journey of clarity, teamwork, and resilience.
+                                Our first hackathon tested not only our skills but our ability to stay aligned under pressure. We split roles Akash & I on software, Basavaraj & Nitish on hardware and worked like clockwork.</p>
                             <div class="project-tech">
-                                <span>Automation</span><span>Python</span><span>DevSecOps</span>
+                                <span>Automation</span><span>Robotics</span><span>Track Winners</span>
                             </div>
                         </div>
                     </article>
@@ -350,23 +321,23 @@
                 </div>
                 <div class="projects-grid">
                     <article class="project-card">
-                        <div class="project-img" style="height:140px;display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg, rgba(0,245,255,0.02), rgba(139,92,246,0.01));">
-                            <i class="fas fa-certificate" style="font-size:36px;color:var(--neon)"></i>
+                        <div class="project-img small gradient--cyan">
+                            <img src="assets/certifications/Iotopia.jpg" alt="Hackathon Winners" class="project-thumb" onerror="this.style.display='none'">
                         </div>
                         <div class="project-content">
-                            <h3>OSCP</h3>
-                            <p>Offensive Security Certified Professional — hands-on penetration testing certification.</p>
+                            <h3>IOTOPIA Track Winners</h3>
+                            <p>IOTOPIA , National Level Hackathon Organized by Reva University, Bangalore . We won the best track price their for Sustainable Irrigation.</p>
                             <div class="project-tech">
-                                <span>PenTest</span><span>Exploitation</span>
+                                <span>Automation</span><span>Robotics</span><span>Track Winners</span>
                             </div>
                         </div>
                     </article>
                     <article class="project-card">
-                        <div class="project-img" style="height:140px;display:flex;align-items:center;justify-content:center;background:linear-gradient(90deg, rgba(139,92,246,0.02), rgba(255,77,253,0.01));">
-                            <i class="fas fa-shield-alt" style="font-size:36px;color:var(--neon-pink)"></i>
+                        <div class="project-img small gradient--violet">
+                            <img src="assets/certifications/0xday.jpg" alt="0XDay" class="project-thumb" onerror="this.style.display='none'">
                         </div>
                         <div class="project-content">
-                            <h3>CompTIA Security+</h3>
+                            <h3>0XDay Participation Certificate</h3>
                             <p>Foundational security certification covering risk management, cryptography and architecture.</p>
                             <div class="project-tech">
                                 <span>Security</span><span>Risk</span>
@@ -438,7 +409,50 @@
         </div>
     </footer>
 
+    <!-- image modal (lightbox) -->
+	<div id="img-modal" aria-hidden="true" role="dialog" aria-label="Image viewer">
+		<button id="img-modal-close" class="modal-close" aria-label="Close">&times;</button>
+		<div class="modal-content">
+			<img src="" alt="">
+		</div>
+	</div>
+
     <script src="script.js"></script>
+    <!-- lightbox script -->
+	<script>
+		(function(){
+			const modal = document.getElementById('img-modal');
+			const modalImg = modal.querySelector('.modal-content img');
+			const closeBtn = document.getElementById('img-modal-close');
+
+			// make images clickable and open modal
+			document.querySelectorAll('img').forEach(img => {
+				// skip images that are inside the modal itself
+				if (modal.contains(img)) return;
+				img.classList.add('enlargeable');
+				img.addEventListener('click', (e) => {
+					// ignore very small images (optionally)
+					if (img.naturalWidth < 50 || img.naturalHeight < 50) return;
+					modalImg.src = img.src;
+					modalImg.alt = img.alt || '';
+					modal.classList.add('open');
+					modal.setAttribute('aria-hidden', 'false');
+					document.body.style.overflow = 'hidden';
+				});
+			});
+
+			function closeModal(){
+				modal.classList.remove('open');
+				modal.setAttribute('aria-hidden', 'true');
+				modalImg.src = '';
+				document.body.style.overflow = '';
+			}
+
+			closeBtn.addEventListener('click', closeModal);
+			modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+			document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+		})();
+	</script>
 </body>
 
 </html>

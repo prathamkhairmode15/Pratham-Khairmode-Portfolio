@@ -88,6 +88,64 @@ p {
     color: var(--text-muted);
 }
 
+/* Improve readability: justify primary reading text */
+p,
+li,
+blockquote,
+.project-content,
+.about-text,
+.contact-text,
+.timeline-content,
+.skill-list span {
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Lightbox / modal (image viewer) */
+.enlargeable { cursor: zoom-in; }
+
+#img-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    padding: 20px;
+}
+#img-modal.open { display: flex; }
+
+#img-modal .modal-content {
+    max-width: 92%;
+    max-height: 92%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    border-radius: 6px;
+    overflow: hidden;
+}
+#img-modal .modal-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#img-modal .modal-close {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* Safety: hide navbar / mobile-nav if markup still exists */
+.navbar,
+.mobile-nav {
+    display: none !important;
+}
+
 /* Responsive typography */
 h1.hero-title {
 	/* fluid heading */
@@ -388,8 +446,16 @@ h1.hero-title {
 /* Projects Section */
 .projects-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-	gap: 1rem; /* was 2rem */
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem; /* kept previous gap sizing */
+}
+
+/* responsive fallbacks */
+@media (max-width: 1100px) {
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+    .projects-grid { grid-template-columns: 1fr; }
 }
 
 .project-card {
@@ -410,6 +476,53 @@ h1.hero-title {
 	height: auto;
 	aspect-ratio: 16/9;
 	object-fit:fill;
+}
+
+/* Thumbnail utilities (moved from inline styles) */
+.project-img.small {
+    height: 140px; /* small thumbnail height used for competitions & certifications */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: transparent; /* base, gradients override below */
+}
+
+.project-img {
+    /* fallback container behavior used where project images are wrapped */
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    background: transparent;
+}
+
+/* thumbnail image inside container */
+.project-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills the container cleanly */
+    display: block;
+}
+
+/* Gradient background variants (used instead of inline gradients) */
+.gradient--cyan {
+    background: linear-gradient(90deg, rgba(0,245,255,0.03), rgba(139,92,246,0.02));
+}
+
+.gradient--pink {
+    background: linear-gradient(90deg, rgba(255,77,253,0.03), rgba(0,245,255,0.02));
+}
+
+.gradient--violet {
+    background: linear-gradient(90deg, rgba(139,92,246,0.02), rgba(255,77,253,0.01));
+}
+
+/* Ensure existing direct <img class="project-img"> still behaves (compat) */
+img.project-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .project-content {
