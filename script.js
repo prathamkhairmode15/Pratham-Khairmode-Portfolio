@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const phoneNumber = "91XXXXXXXXXX"; // Replace with your WhatsApp number
+    const phoneNumber = "918310306050"; // Replace with your WhatsApp number
     const whatsappMessage =
       `Hello, my name is ${name}.\n` +
       (email ? `Email: ${email}\n` : "") +
