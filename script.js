@@ -156,3 +156,32 @@ document.addEventListener('DOMContentLoaded', () => {
         draw();
     })();
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !message) {
+      alert("Please fill in the required fields.");
+      return;
+    }
+
+    const phoneNumber = "91XXXXXXXXXX"; // Replace with your WhatsApp number
+    const whatsappMessage =
+      `Hello, my name is ${name}.\n` +
+      (email ? `Email: ${email}\n` : "") +
+      `\n${message}`;
+
+    const whatsappURL =
+      `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappURL, "_blank");
+
+    form.reset();
+  });
+});
